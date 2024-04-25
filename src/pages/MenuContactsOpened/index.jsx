@@ -171,7 +171,7 @@ export default function MenuContactsOpenedPage() {
                   <div className="flex flex-row gap-2 items-center   ">
                     {images?.map((image, index) => (
                       <div
-                        className="border border-dashed border-gray-900_51 flex flex-col items-center p-2 mt-2 rounded-lg bg-[#F6F6F6] cursor-pointer relative transition-all duration-300 ease-in-out  hover:backdrop-blur hover:backdrop-brightness-0 hover:backdrop-grayscale"
+                        className="border border-dashed border-gray-900_51 flex flex-col items-center p-2 mt-2 rounded-lg bg-[#F6F6F6] cursor-pointer relative "
                         key={index}
                         onMouseEnter={() => handleImageHover(index)}
                         onMouseLeave={() => handleImageHover(null)}
@@ -184,7 +184,7 @@ export default function MenuContactsOpenedPage() {
                         />
                         {hoveredIndex === index && (
                           <button
-                            className="absolute top-2 inset-0 p-2 rounded-full text-white"
+                            className="absolute top-2 inset-0 p-2 rounded-full text-white transition-all duration-300 ease-in-out backdrop-blur-sm backdrop-brightness-50 backdrop-contrast-50 backdrop-grayscale"
                             onClick={() => handleImageDelete(index)}
                           >
                             <Delete />

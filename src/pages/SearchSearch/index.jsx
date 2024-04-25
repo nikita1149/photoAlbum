@@ -10,7 +10,7 @@ export default function SearchSearchPage() {
 
   const [searchedContent, setSearchedContent] = useState(() => {
     const storedContent = localStorage.getItem("searchedContent");
-    return storedContent ? JSON.parse(storedContent) : [];
+    return storedContent ? JSON.parse(storedContent) : ["Tutte", "Arte", "Orologi", "Gioielli", "Design"];
   });
 
   const suggestions = [

@@ -31,6 +31,11 @@ export default function SearchResultsPage() {
     filteredData = filterableData?.filter(
       (data) => data?.name?.toLowerCase() === searchKeyword?.toLowerCase()
     );
+    if (filteredData.length === 0) {
+      filteredData = filterableData?.filter((data) =>
+        data?.title?.toLowerCase().includes(searchKeyword?.toLowerCase())
+      );
+    }
   }
 
   return (
