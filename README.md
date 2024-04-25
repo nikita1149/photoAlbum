@@ -1,3 +1,8 @@
+It has a contact form . 
+You can use search icon to search images.
+Images can be searched by category which are nature, cars and people.
+It also shows last 5 searched items and also suggestions.
+
 ## app1
 
 ## Description
